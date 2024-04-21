@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://jetms781qw0w"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Sistema de Dano/Script/SistemaDeDano.gd" id="1_66ojw"]
+
+[node name="SistemaDeDano" type="Node"]
+script = ExtResource("1_66ojw")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0cdu8i23gmlq"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Controladores/Script/JogadorReguladores.gd" id="1_rxbmx"]
+
+[node name="Regulador" type="Node"]
+script = ExtResource("1_rxbmx")

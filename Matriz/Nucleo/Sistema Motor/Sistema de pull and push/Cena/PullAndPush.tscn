@@ -1,0 +1,21 @@
+[gd_scene load_steps=7 format=3 uid="uid://oth7lkmqowmi"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Sistema de pull and push/Script/PullAndPush.gd" id="1_itnml"]
+[ext_resource type="PackedScene" uid="uid://754jepaohq7y" path="res://Matriz/Nucleo/Sistema Motor/Sistema de pull and push/Cena/inimigos.tscn" id="2_0exys"]
+[ext_resource type="PackedScene" uid="uid://c1a6h7ager1aq" path="res://Matriz/Nucleo/Sistema Motor/Sistema de pull and push/Cena/letras.tscn" id="3_lj2mx"]
+[ext_resource type="PackedScene" uid="uid://lvgwkfh83q0h" path="res://Matriz/Nucleo/Sistema Motor/Sistema de pull and push/Cena/quebraveis.tscn" id="4_kxijo"]
+[ext_resource type="PackedScene" uid="uid://1hjxv38sarej" path="res://Matriz/Nucleo/Sistema Motor/Sistema de pull and push/Cena/xp.tscn" id="5_vkarr"]
+[ext_resource type="PackedScene" uid="uid://trcs31dgqfiy" path="res://Matriz/Nucleo/Sistema Motor/Sistema de pull and push/Cena/consumiveis.tscn" id="6_jpbq1"]
+
+[node name="PullAndPush" type="Node"]
+script = ExtResource("1_itnml")
+
+[node name="Inimigos" parent="." instance=ExtResource("2_0exys")]
+
+[node name="Letras" parent="." instance=ExtResource("3_lj2mx")]
+
+[node name="Quebraveis" parent="." instance=ExtResource("4_kxijo")]
+
+[node name="Xp" parent="." instance=ExtResource("5_vkarr")]
+
+[node name="Consumiveis" parent="." instance=ExtResource("6_jpbq1")]

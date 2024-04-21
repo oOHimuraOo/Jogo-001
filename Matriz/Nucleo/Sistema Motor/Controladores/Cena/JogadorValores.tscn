@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cs31dlfgaaurc"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Controladores/Script/JogadorValores.gd" id="1_5bm45"]
+
+[node name="Valores" type="Node"]
+script = ExtResource("1_5bm45")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt7b0em22fcu6"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/State Machine/Estados/Script/Parado.gd" id="1_ssv0d"]
+
+[node name="Parado" type="Node"]
+script = ExtResource("1_ssv0d")

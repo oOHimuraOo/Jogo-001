@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://4tosgack11r2"]
+
+[ext_resource type="PackedScene" uid="uid://diybju832ivlj" path="res://Matriz/Nucleo/NPCs/Inimigos/Cena/inimigo_base.tscn" id="1_b8un2"]
+[ext_resource type="PackedScene" uid="uid://cdrpq2v4nsy42" path="res://Matriz/Nucleo/Personagem/Cena/Personagem.tscn" id="2_aikc0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ss5i3"]
+size = Vector2(801, 20)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RigidBody2D" type="StaticBody2D" parent="."]
+position = Vector2(6, 309)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(390.5, 0)
+shape = SubResource("RectangleShape2D_ss5i3")
+
+[node name="InimigoBase" parent="." instance=ExtResource("1_b8un2")]
+position = Vector2(409, 263)
+
+[node name="Personagem" parent="." instance=ExtResource("2_aikc0")]

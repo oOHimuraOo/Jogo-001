@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://5dxo2y2rlqh5"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Sistemas de Armas/Amas de Longa Distancia/Armas Derivadas/Script/Ak44.gd" id="1_0ob6d"]
+[ext_resource type="Texture2D" uid="uid://jeqhjqsy52pp" path="res://Assets/Place Holder/Armas/free-guns-pixel-art/Assaut-rifle-1.png" id="2_g83ds"]
+
+[node name="Ak44" type="Node2D"]
+script = ExtResource("1_0ob6d")
+
+[node name="Textura" type="Sprite2D" parent="."]
+self_modulate = Color(0, 0, 0, 1)
+texture = ExtResource("2_g83ds")
+
+[node name="TemporizadorDeBalasPorSegundo" type="Timer" parent="."]
+one_shot = true
+
+[node name="PontoDeSaida" type="Marker2D" parent="."]
+position = Vector2(31, -5)
+
+[node name="AssistenciaDeMira" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 2.0
+default_color = Color(0.756863, 0, 0, 1)
+
+[node name="AssistenciaDeMira2" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 2.0
+default_color = Color(0.756863, 0, 0, 1)
+
+[node name="VerificadorDeTiroAcertado" type="RayCast2D" parent="."]
+collision_mask = 11
+collide_with_areas = true

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnlgrmvifd3u8"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Script/Enumeracoes.gd" id="1_dtdsi"]
+
+[node name="Enumeracoes" type="Node"]
+script = ExtResource("1_dtdsi")

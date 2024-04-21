@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqr0xm24xc5fb"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Script/Variaveis.gd" id="1_hjyej"]
+
+[node name="Variaveis" type="Node"]
+script = ExtResource("1_hjyej")

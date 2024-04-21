@@ -1,0 +1,15 @@
+[gd_scene load_steps=10 format=3 uid="uid://b1on3n0m5it22"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/State Machine/Estados/Script/Correndo.gd" id="1_rs62b"]
+[ext_resource type="AudioStream" uid="uid://or50tgipw4xh" path="res://Assets/Place Holder/Sons/NA_Character Footsteps (Dirt & Grass) - Pack 1/Run/Dirt/DIRT - Run Short 1.wav" id="2_432jk"]
+[ext_resource type="AudioStream" uid="uid://ca483vke4hnvb" path="res://Assets/Place Holder/Sons/NA_Character Footsteps (Dirt & Grass) - Pack 1/Run/Dirt/DIRT - Run Short 2.wav" id="3_qkgj2"]
+[ext_resource type="AudioStream" uid="uid://dtknxtp1utrep" path="res://Assets/Place Holder/Sons/NA_Character Footsteps (Dirt & Grass) - Pack 1/Run/Dirt/DIRT - Run Short 3.wav" id="4_n52sc"]
+[ext_resource type="AudioStream" uid="uid://7rryp4tj8i7b" path="res://Assets/Place Holder/Sons/NA_Character Footsteps (Dirt & Grass) - Pack 1/Run/Dirt/DIRT - Run Short 4.wav" id="5_12mxt"]
+[ext_resource type="AudioStream" uid="uid://24byqhrf3dlf" path="res://Assets/Place Holder/Sons/NA_Character Footsteps (Dirt & Grass) - Pack 1/Run/Dirt/DIRT - Run Short 5.wav" id="6_vksnv"]
+[ext_resource type="AudioStream" uid="uid://q3smkfwnwgyk" path="res://Assets/Place Holder/Sons/NA_Character Footsteps (Dirt & Grass) - Pack 1/Run/Dirt/DIRT - Run Short 6.wav" id="7_5021i"]
+[ext_resource type="AudioStream" uid="uid://dr4sjv3qfduib" path="res://Assets/Place Holder/Sons/NA_Character Footsteps (Dirt & Grass) - Pack 1/Run/Dirt/DIRT - Run Short 7.wav" id="8_4x0c2"]
+[ext_resource type="AudioStream" uid="uid://do5vi0omcs8on" path="res://Assets/Place Holder/Sons/NA_Character Footsteps (Dirt & Grass) - Pack 1/Run/Dirt/DIRT - Run Short 8.wav" id="9_o8nay"]
+
+[node name="Correndo" type="Node"]
+script = ExtResource("1_rs62b")
+lista_de_efeitos_sonoros = Array[AudioStream]([ExtResource("2_432jk"), ExtResource("3_qkgj2"), ExtResource("4_n52sc"), ExtResource("5_12mxt"), ExtResource("6_vksnv"), ExtResource("7_5021i"), ExtResource("8_4x0c2"), ExtResource("9_o8nay")])

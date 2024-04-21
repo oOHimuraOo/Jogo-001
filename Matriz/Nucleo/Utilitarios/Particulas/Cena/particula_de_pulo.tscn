@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://q2quseos5gmy"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Utilitarios/Particulas/Script/particula_de_pulo.gd" id="1_0qdyu"]
+
+[node name="ParticulaDePulo" type="CPUParticles2D"]
+amount = 30
+lifetime = 0.3
+explosiveness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(12, 0)
+direction = Vector2(0, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 5.0
+initial_velocity_max = 7.0
+color = Color(0.470588, 0.270588, 0.0941176, 1)
+script = ExtResource("1_0qdyu")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

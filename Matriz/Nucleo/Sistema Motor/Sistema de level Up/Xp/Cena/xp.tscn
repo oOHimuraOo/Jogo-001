@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxegtvx6vpj0t"]
+
+[ext_resource type="Texture2D" uid="uid://qxtiuhh2jw7u" path="res://Assets/Place Holder/Itens/Xp/Fraco.png" id="1_8t1ka"]
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Sistema de level Up/Xp/Script/xp.gd" id="1_ci7jf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sbavp"]
+radius = 4.0
+
+[node name="Xp" type="CharacterBody2D" groups=["Coletavel", "Xp"]]
+collision_layer = 256
+collision_mask = 0
+script = ExtResource("1_ci7jf")
+
+[node name="Textura" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_8t1ka")
+
+[node name="Colisao" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_sbavp")
+
+[node name="Atualizador_de_valor_de_experiencia" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="Atualizador_de_quantidade_de_nodos" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[connection signal="timeout" from="Atualizador_de_valor_de_experiencia" to="." method="_on_atualizador_de_valor_de_experiencia_timeout"]
+[connection signal="timeout" from="Atualizador_de_quantidade_de_nodos" to="." method="_on_atualizador_de_quantidade_de_nodos_timeout"]

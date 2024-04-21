@@ -1,0 +1,134 @@
+{
+  "0": {
+    "Nome": "Felipe",
+    "Vida": 500,
+    "Mana": 100,
+    "Estamina": 100,
+    "Lista_De_Estados_Movimento": [
+      "Parado",
+      "Andando",
+      "Pulando",
+      "Aterrissando",
+      "Agachado",
+      "Correndo",
+      "Escalando"
+    ],
+    "Lista_De_Estados_Combate": [
+      "Combate",
+      "CombateAndando",
+      "Esquivando",
+      "CombateCorrendo",
+      "Mirando"
+    ],
+    "Lista_De_Estados_Especial": [
+      "NoAr",
+      "Morrendo"
+    ],
+    "Forca": 7,
+    "Destreza": 4,
+    "Constituicao": 7,
+    "Pulos": 1,
+    "area_de_coleta": 59,
+    "Tipo_arma_inicial": "Longa_distancia",
+    "Index_arma_inicial": 0
+  },
+  "1": {
+    "Nome": "Guilherme",
+    "Vida": 400,
+    "Mana": 200,
+    "Estamina": 150,
+    "Lista_De_Estados_Movimento": [
+      "Parado",
+      "Andando",
+      "Pulando",
+      "Aterrissando",
+      "Agachado",
+      "Correndo",
+      "Escalando"
+    ],
+    "Lista_De_Estados_Combate": [
+      "Combate",
+      "CombateAndando",
+      "Esquivando",
+      "CombateCorrendo",
+      "Mirando"
+    ],
+    "Lista_De_Estados_Especial": [
+      "NoAr",
+      "Morrendo"
+    ],
+    "Forca": 6,
+    "Destreza": 5,
+    "Constituicao": 6,
+    "Pulos": 1,
+    "area_de_coleta": 46,
+    "Tipo_arma_inicial": "Ataque_em_area",
+    "Index_arma_inicial": 0
+  },
+  "2": {
+    "Nome": "Vito",
+    "Vida": 300,
+    "Mana": 100,
+    "Estamina": 200,
+    "Lista_De_Estados_Movimento": [
+      "Parado",
+      "Andando",
+      "Pulando",
+      "Aterrissando",
+      "Agachado",
+      "Correndo",
+      "Escalando"
+    ],
+    "Lista_De_Estados_Combate": [
+      "Combate",
+      "CombateAndando",
+      "Esquivando",
+      "CombateCorrendo",
+      "Mirando"
+    ],
+    "Lista_De_Estados_Especial": [
+      "NoAr",
+      "Morrendo"
+    ],
+    "Forca": 5,
+    "Destreza": 6,
+    "Constituicao": 5,
+    "Pulos": 1,
+    "area_de_coleta": 49,
+    "Tipo_arma_inicial": "Projetil",
+    "Index_arma_inicial": 10
+  },
+  "3": {
+    "Nome": "William",
+    "Vida": 600,
+    "Mana": 50,
+    "Estamina": 50,
+    "Lista_De_Estados_Movimento": [
+      "Parado",
+      "Andando",
+      "Pulando",
+      "Aterrissando",
+      "Agachado",
+      "Correndo",
+      "Escalando"
+    ],
+    "Lista_De_Estados_Combate": [
+      "Combate",
+      "CombateAndando",
+      "Esquivando",
+      "CombateCorrendo",
+      "Mirando"
+    ],
+    "Lista_De_Estados_Especial": [
+      "NoAr",
+      "Morrendo"
+    ],
+    "Forca": 4,
+    "Destreza": 7,
+    "Constituicao": 4,
+    "Pulos": 1,
+    "area_de_coleta": 51,
+    "Tipo_arma_inicial": "Pontual",
+    "Index_arma_inicial": 10
+  }
+}

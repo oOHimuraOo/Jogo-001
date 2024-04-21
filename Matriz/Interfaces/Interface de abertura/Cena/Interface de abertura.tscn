@@ -1,0 +1,338 @@
+[gd_scene load_steps=29 format=3 uid="uid://cs7o48cpv0bwo"]
+
+[ext_resource type="Script" path="res://Matriz/Interfaces/Interface de abertura/Script/Interface de abertura.gd" id="1_v24lb"]
+[ext_resource type="Texture2D" uid="uid://c6hw8uskon0a1" path="res://icon.svg" id="1_yio2i"]
+
+[sub_resource type="Gradient" id="Gradient_wlqmw"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_gjj43"]
+gradient = SubResource("Gradient_wlqmw")
+
+[sub_resource type="Gradient" id="Gradient_yxslk"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vvng4"]
+gradient = SubResource("Gradient_yxslk")
+
+[sub_resource type="Gradient" id="Gradient_tx1ly"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wnyip"]
+gradient = SubResource("Gradient_tx1ly")
+
+[sub_resource type="Gradient" id="Gradient_mtlcu"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ljalv"]
+gradient = SubResource("Gradient_mtlcu")
+
+[sub_resource type="Gradient" id="Gradient_pd8gx"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wknkm"]
+gradient = SubResource("Gradient_pd8gx")
+
+[sub_resource type="Gradient" id="Gradient_j3pnw"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_30836"]
+gradient = SubResource("Gradient_j3pnw")
+
+[sub_resource type="Gradient" id="Gradient_r7y4x"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_pn4qb"]
+gradient = SubResource("Gradient_r7y4x")
+
+[sub_resource type="Gradient" id="Gradient_g4wyh"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_bk7el"]
+gradient = SubResource("Gradient_g4wyh")
+
+[sub_resource type="Gradient" id="Gradient_qejt1"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_gicru"]
+gradient = SubResource("Gradient_qejt1")
+
+[sub_resource type="Gradient" id="Gradient_iekhs"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vjf1n"]
+gradient = SubResource("Gradient_iekhs")
+
+[sub_resource type="Gradient" id="Gradient_lfkaw"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_k1d0k"]
+gradient = SubResource("Gradient_lfkaw")
+
+[sub_resource type="Gradient" id="Gradient_xu72a"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_x007r"]
+gradient = SubResource("Gradient_xu72a")
+
+[sub_resource type="Gradient" id="Gradient_cj50k"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_d3vp6"]
+gradient = SubResource("Gradient_cj50k")
+
+[node name="InterfaceDeAbertura" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v24lb")
+
+[node name="PlanoDeFundo" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_yio2i")
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="OrganizadorVertical" type="VBoxContainer" parent="PlanoDeFundo/Marginalizador"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 700)
+layout_mode = 2
+
+[node name="OrganizadorSuperior" type="VBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/Espacador"]
+layout_mode = 2
+
+[node name="OrganizadorInformativos" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/Espacador/OrganizadorSuperior"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/Espacador/OrganizadorSuperior/OrganizadorInformativos"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DinheiroImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/Espacador/OrganizadorSuperior/OrganizadorInformativos"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_gjj43")
+expand_mode = 1
+
+[node name="DinheiroValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/Espacador/OrganizadorSuperior/OrganizadorInformativos"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 50
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PresenteImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/Espacador/OrganizadorSuperior/OrganizadorInformativos"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_vvng4")
+expand_mode = 1
+
+[node name="PresenteValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/Espacador/OrganizadorSuperior/OrganizadorInformativos"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 50
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AlturaImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/Espacador/OrganizadorSuperior/OrganizadorInformativos"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wnyip")
+expand_mode = 1
+
+[node name="AlturaValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/Espacador/OrganizadorSuperior/OrganizadorInformativos"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 50
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Marginalizador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/Espacador/OrganizadorSuperior/OrganizadorInformativos"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/Espacador/OrganizadorSuperior"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OrganizadorHorizontal" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BotaoJogar" type="TextureButton" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_ljalv")
+texture_pressed = SubResource("GradientTexture1D_wknkm")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaJogar" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal/BotaoJogar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Jogar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorHorizontal2" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 25
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BotaoLoja" type="TextureButton" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal2"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_30836")
+texture_pressed = SubResource("GradientTexture1D_pn4qb")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaLoja" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal2/BotaoLoja"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Loja"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoHabilidades" type="TextureButton" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal2"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_bk7el")
+texture_pressed = SubResource("GradientTexture1D_gicru")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaHabilidades" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal2/BotaoHabilidades"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Habilidades"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoConfiguracoes" type="TextureButton" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal2"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_vjf1n")
+texture_pressed = SubResource("GradientTexture1D_k1d0k")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaConfiguracoes" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal2/BotaoConfiguracoes"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Configuracoes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorHorizontal3" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BotaoSair" type="TextureButton" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal3"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_x007r")
+texture_pressed = SubResource("GradientTexture1D_d3vp6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="EtiquetaSair" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal3/BotaoSair"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Sair"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorVertical"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="pressed" from="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal/BotaoJogar" to="." method="_on_botao_jogar_pressed"]
+[connection signal="pressed" from="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal2/BotaoLoja" to="." method="_on_botao_loja_pressed"]
+[connection signal="pressed" from="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal2/BotaoHabilidades" to="." method="_on_botao_habilidades_pressed"]
+[connection signal="pressed" from="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal2/BotaoConfiguracoes" to="." method="_on_botao_configuracoes_pressed"]
+[connection signal="pressed" from="PlanoDeFundo/Marginalizador/OrganizadorVertical/OrganizadorHorizontal3/BotaoSair" to="." method="_on_botao_sair_pressed"]

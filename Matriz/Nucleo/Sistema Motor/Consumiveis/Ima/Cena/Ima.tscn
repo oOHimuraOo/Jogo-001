@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhek4nngiufcw"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Consumiveis/Ima/Script/Ima.gd" id="1_vbq7h"]
+[ext_resource type="Texture2D" uid="uid://b3dkrtodwm80b" path="res://Assets/Place Holder/Objetos/Comidas/12.png" id="2_e6olp"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g6pj4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_e6olp")
+}],
+"loop": true,
+"name": &"Ima",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t0s06"]
+
+[node name="Ima" type="CharacterBody2D" groups=["Coletavel", "Ima"]]
+collision_layer = 256
+collision_mask = 0
+script = ExtResource("1_vbq7h")
+
+[node name="Textura" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_g6pj4")
+animation = &"Ima"
+autoplay = "Ima"
+
+[node name="Colisao" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_t0s06")
+
+[node name="AtualizadoDeQuantidadeDeNodos" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true

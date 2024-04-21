@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://f3c14g126073"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Consumiveis/Bau/Script/BauBase.gd" id="1_470e0"]
+[ext_resource type="Texture2D" uid="uid://0ytpm5ixmo0b" path="res://Assets/Place Holder/Objetos/Baus/Treasure_Chest (32 x 16).png" id="2_ihhjc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4je3"]
+atlas = ExtResource("2_ihhjc")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l644p"]
+atlas = ExtResource("2_ihhjc")
+region = Rect2(32, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j0cyy"]
+atlas = ExtResource("2_ihhjc")
+region = Rect2(64, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6i1uu"]
+atlas = ExtResource("2_ihhjc")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bgj26"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4je3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l644p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j0cyy")
+}],
+"loop": false,
+"name": &"Abrindo",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6i1uu")
+}],
+"loop": true,
+"name": &"Fechado",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4lym4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t1pdd"]
+
+[node name="BauBase" type="RigidBody2D" groups=["Bau"]]
+collision_layer = 1024
+collision_mask = 1025
+script = ExtResource("1_470e0")
+
+[node name="Textura" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bgj26")
+animation = &"Fechado"
+autoplay = "Fechado"
+
+[node name="Colisao" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4lym4")
+
+[node name="DetectorDeMouse" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectorDeMouse"]
+shape = SubResource("CircleShape2D_t1pdd")
+
+[connection signal="animation_finished" from="Textura" to="." method="_on_textura_animation_finished"]
+[connection signal="mouse_entered" from="DetectorDeMouse" to="." method="_on_detector_de_mouse_mouse_entered"]
+[connection signal="mouse_exited" from="DetectorDeMouse" to="." method="_on_detector_de_mouse_mouse_exited"]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://br4got8cr7n4k"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/State Machine/Estados/Script/Morrendo.gd" id="1_6jqwx"]
+
+[node name="Morrendo" type="Node"]
+script = ExtResource("1_6jqwx")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dt8usd54fu27k"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/State Machine/Estados/Script/NoAr.gd" id="1_d6cpu"]
+
+[node name="NoAr" type="Node"]
+script = ExtResource("1_d6cpu")

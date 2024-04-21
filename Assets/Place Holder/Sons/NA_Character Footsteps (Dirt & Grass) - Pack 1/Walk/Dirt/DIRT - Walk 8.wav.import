@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cm557sof8xoma"
+path="res://.godot/imported/DIRT - Walk 8.wav-2779b80e2217b8f7cd9351c2b7d7216b.sample"
+
+[deps]
+
+source_file="res://Assets/Place Holder/Sons/NA_Character Footsteps (Dirt & Grass) - Pack 1/Walk/Dirt/DIRT - Walk 8.wav"
+dest_files=["res://.godot/imported/DIRT - Walk 8.wav-2779b80e2217b8f7cd9351c2b7d7216b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

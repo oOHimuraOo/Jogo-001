@@ -1,0 +1,2 @@
+class_name CONCATENACOES_GlOBAIS
+extends Node

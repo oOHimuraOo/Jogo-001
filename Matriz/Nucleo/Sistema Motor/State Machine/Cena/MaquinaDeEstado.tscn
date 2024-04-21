@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvy50dhopa1tq"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/State Machine/Script/MaquinaDeEstado.gd" id="1_7t14v"]
+
+[node name="MaquinaDeEstado" type="Node"]
+script = ExtResource("1_7t14v")
+
+[node name="Movimento" type="Node" parent="."]
+
+[node name="Combate" type="Node" parent="."]
+
+[node name="Especial" type="Node" parent="."]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca7untsj5nuy3"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Controladores/Script/InimigoReguladores.gd" id="1_wkxfo"]
+
+[node name="InimigoReguladores" type="Node"]
+script = ExtResource("1_wkxfo")

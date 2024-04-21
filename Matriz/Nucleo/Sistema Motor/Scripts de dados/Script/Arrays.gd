@@ -1,0 +1,2 @@
+class_name ARRAYS_GLOBAIS
+extends Node

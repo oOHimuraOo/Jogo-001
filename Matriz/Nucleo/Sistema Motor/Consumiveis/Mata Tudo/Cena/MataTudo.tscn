@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwlydmwakirx"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Consumiveis/Mata Tudo/Script/MataTudo.gd" id="1_l7lb8"]
+[ext_resource type="Texture2D" uid="uid://1vx8vxjk4o4p" path="res://Assets/Place Holder/Objetos/Comidas/01.png" id="2_w1ato"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_872tn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_w1ato")
+}],
+"loop": true,
+"name": &"Mata_Tudo",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_36jgt"]
+
+[node name="MataTudo" type="CharacterBody2D" groups=["Coletavel", "Mata_Tudo"]]
+collision_layer = 256
+collision_mask = 0
+script = ExtResource("1_l7lb8")
+
+[node name="Textura" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_872tn")
+animation = &"Mata_Tudo"
+
+[node name="Colisao" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_36jgt")
+
+[node name="AtualizadoDeQuantidadeDeNodos" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true

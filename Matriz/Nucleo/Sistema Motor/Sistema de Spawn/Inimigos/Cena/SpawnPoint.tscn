@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://1kd1ytlclksa"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Sistema de Spawn/Inimigos/Script/SpawnPoint.gd" id="1_3osgj"]
+
+[node name="SpawnPoint" type="Control" groups=["Spawn_Point"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_3osgj")
+
+[node name="Cooldown_do_spawn" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+autostart = true
+
+[node name="PosicaoDeSpawn1" type="Marker2D" parent="."]
+position = Vector2(192, 1258)
+
+[node name="PosicaoDeSpawn2" type="Marker2D" parent="."]
+position = Vector2(960, 1258)
+
+[node name="PosicaoDeSpawn3" type="Marker2D" parent="."]
+position = Vector2(1728, 1258)
+
+[node name="PosicaoDeSpawn4" type="Marker2D" parent="."]
+position = Vector2(576, -194)
+
+[node name="PosicaoDeSpawn5" type="Marker2D" parent="."]
+position = Vector2(1344, -194)
+
+[connection signal="timeout" from="Cooldown_do_spawn" to="." method="_on_timer_timeout"]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgjdxaqxc8cp2"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/State Machine/Estados/Script/Esquivando.gd" id="1_l3obj"]
+
+[node name="Esquivando" type="Node"]
+script = ExtResource("1_l3obj")

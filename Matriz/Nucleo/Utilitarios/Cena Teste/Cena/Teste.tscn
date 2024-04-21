@@ -1,0 +1,209 @@
+[gd_scene load_steps=4 format=3 uid="uid://8gtp0i1gnwi1"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Utilitarios/Cena Teste/Script/Teste.gd" id="1_oy4pn"]
+[ext_resource type="PackedScene" uid="uid://1kd1ytlclksa" path="res://Matriz/Nucleo/Sistema Motor/Sistema de Spawn/Inimigos/Cena/SpawnPoint.tscn" id="2_6iuiu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ovcrh"]
+size = Vector2(307, 20)
+
+[node name="Teste" type="Node2D"]
+script = ExtResource("1_oy4pn")
+
+[node name="Chao" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(11, 1070)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Chao2" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(406, 1069)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao2"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Chao3" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(713, 1024)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao3"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Chao4" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(834, 927)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao4"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Chao5" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(364, 919)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao5"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Chao6" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(11, 783)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao6"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Teto" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(10, -16)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Teto"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Teto2" type="StaticBody2D" parent="." groups=["Cenario", "Destrutivel"]]
+position = Vector2(317, -16)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Teto2"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Teto3" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(624, -16)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Teto3"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Teto4" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(834, -16)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Teto4"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Chao7" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(10, 167)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao7"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Chao8" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(209, 1176)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao8"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Parede" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(-10, 783)
+rotation = 1.5708
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parede"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Parede2" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(-10, 476)
+rotation = 1.5708
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parede2"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Parede3" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(713, 1044)
+rotation = 1.5708
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parede3"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Parede4" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(516, 1090)
+rotation = 1.5708
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parede4"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Parede5" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(188, 1090)
+rotation = 1.5708
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parede5"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Parede6" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(1020, 947)
+rotation = 1.5708
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parede6"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Parede7" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(1121, 619)
+rotation = 1.5708
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parede7"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Parede8" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(1121, 311)
+rotation = 1.5708
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parede8"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Parede9" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(1121, 4)
+rotation = 1.5708
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parede9"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Parede10" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(-10, 168)
+rotation = 1.5708
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parede10"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="Parede11" type="StaticBody2D" parent="." groups=["Cenario"]]
+position = Vector2(-10, -140)
+rotation = 1.5708
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parede11"]
+position = Vector2(143.5, 0)
+shape = SubResource("RectangleShape2D_ovcrh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="SpawnPoint" parent="CanvasLayer" instance=ExtResource("2_6iuiu")]

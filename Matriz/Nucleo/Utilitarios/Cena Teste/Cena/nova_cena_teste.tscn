@@ -1,0 +1,215 @@
+[gd_scene load_steps=11 format=3 uid="uid://c4yyw3ojluvur"]
+
+[ext_resource type="PackedScene" uid="uid://cermpw6xb3fuu" path="res://Matriz/Nucleo/Sistema Motor/Sistema de Spawn/Jogador/Cena/JogadorSpawnPoint.tscn" id="1_kkcvr"]
+[ext_resource type="Script" path="res://Matriz/Nucleo/Utilitarios/Cena Teste/Script/nova_cena_teste.gd" id="1_qkcac"]
+[ext_resource type="PackedScene" uid="uid://1kd1ytlclksa" path="res://Matriz/Nucleo/Sistema Motor/Sistema de Spawn/Inimigos/Cena/SpawnPoint.tscn" id="2_7ctwu"]
+[ext_resource type="PackedScene" uid="uid://cay8gui252hsk" path="res://Matriz/Nucleo/Utilitarios/Cena Teste/Chao e parede/Chao e Parede.tscn" id="3_2hjqb"]
+[ext_resource type="PackedScene" uid="uid://byyrkay26tmke" path="res://Matriz/Nucleo/Sistema Motor/Sistema de level Up/Cena/Interface_de_melhoria_de_atributo.tscn" id="4_65yoc"]
+[ext_resource type="PackedScene" uid="uid://dbi3xo8rnmu6w" path="res://Matriz/Nucleo/Sistema Motor/Consumiveis/Bombas/Cena/BombasBase.tscn" id="6_j0yh2"]
+[ext_resource type="PackedScene" uid="uid://dhek4nngiufcw" path="res://Matriz/Nucleo/Sistema Motor/Consumiveis/Ima/Cena/Ima.tscn" id="7_3m4ic"]
+[ext_resource type="PackedScene" uid="uid://cx0kfshkbdf5x" path="res://Matriz/Nucleo/Sistema Motor/Consumiveis/Pocoes/Cena/PocoesBase.tscn" id="8_3m01d"]
+[ext_resource type="PackedScene" uid="uid://e5x5q1lgbc34" path="res://Matriz/Nucleo/Sistema Motor/Consumiveis/Parar o Tempo/Cena/PararTempo.tscn" id="9_0x63s"]
+[ext_resource type="PackedScene" uid="uid://bwlydmwakirx" path="res://Matriz/Nucleo/Sistema Motor/Consumiveis/Mata Tudo/Cena/MataTudo.tscn" id="10_mgoll"]
+
+[node name="Nova_Cena_Teste" type="Node"]
+script = ExtResource("1_qkcac")
+
+[node name="Spawners" type="Node" parent="."]
+
+[node name="JogadorSpawnPoint" parent="Spawners" instance=ExtResource("1_kkcvr")]
+
+[node name="SpawnPoint" parent="Spawners" instance=ExtResource("2_7ctwu")]
+
+[node name="Cenario" type="Node" parent="."]
+
+[node name="ChaoEParede" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(285, 1090)
+
+[node name="ChaoEParede2" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(854, 1090)
+
+[node name="ChaoEParede3" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1424, 1090)
+
+[node name="ChaoEParede4" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1995, 1090)
+
+[node name="ChaoEParede5" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(2270, 795)
+rotation = 1.5708
+
+[node name="ChaoEParede6" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(2270, 225)
+rotation = 1.5708
+
+[node name="ChaoEParede7" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(2270, -345)
+rotation = 1.5708
+
+[node name="ChaoEParede8" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(2270, -915)
+rotation = 1.5708
+
+[node name="ChaoEParede9" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(2270, -1484)
+rotation = 1.5708
+
+[node name="ChaoEParede10" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(2271, -2052)
+rotation = 1.5708
+
+[node name="ChaoEParede11" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(2271, -2621)
+rotation = 1.5708
+
+[node name="ChaoEParede12" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(2271, -3189)
+rotation = 1.5708
+
+[node name="ChaoEParede13" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(2271, -3757)
+rotation = 1.5708
+
+[node name="ChaoEParede14" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(2271, -4325)
+rotation = 1.5708
+
+[node name="ChaoEParede15" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1996, -4620)
+
+[node name="ChaoEParede16" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1426, -4620)
+
+[node name="ChaoEParede17" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1426, -4620)
+
+[node name="ChaoEParede18" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(856, -4620)
+
+[node name="ChaoEParede19" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(286, -4620)
+
+[node name="ChaoEParede20" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(11, -4325)
+rotation = 1.5708
+
+[node name="ChaoEParede21" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(11, -3755)
+rotation = 1.5708
+
+[node name="ChaoEParede22" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(11, -3186)
+rotation = 1.5708
+
+[node name="ChaoEParede23" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(10, -2617)
+rotation = 1.5708
+
+[node name="ChaoEParede24" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(10, -2048)
+rotation = 1.5708
+
+[node name="ChaoEParede25" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(10, -1478)
+rotation = 1.5708
+
+[node name="ChaoEParede26" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(10, -909)
+rotation = 1.5708
+
+[node name="ChaoEParede27" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(10, -340)
+rotation = 1.5708
+
+[node name="ChaoEParede28" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(10, 230)
+rotation = 1.5708
+
+[node name="ChaoEParede29" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(10, 799)
+rotation = 1.5708
+
+[node name="ChaoEParede30" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1699, 794)
+rotation = 1.5708
+
+[node name="ChaoEParede31" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1974, 500)
+
+[node name="ChaoEParede32" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1303, 492)
+
+[node name="ChaoEParede33" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(657, 358)
+
+[node name="ChaoEParede34" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(382, 63)
+rotation = 1.5708
+
+[node name="ChaoEParede35" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(304, -230)
+
+[node name="ChaoEParede36" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1030, 217)
+
+[node name="ChaoEParede37" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1740, 169)
+
+[node name="ChaoEParede38" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1974, -11)
+
+[node name="ChaoEParede39" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1279, -102)
+
+[node name="ChaoEParede40" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1687, -227)
+
+[node name="ChaoEParede41" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(1173, -714)
+rotation = 1.5708
+
+[node name="ChaoEParede42" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(877, -989)
+
+[node name="ChaoEParede43" parent="Cenario" instance=ExtResource("3_2hjqb")]
+position = Vector2(308, -989)
+
+[node name="Itens" type="Node" parent="."]
+
+[node name="Consumiveis" type="Node" parent="Itens"]
+
+[node name="BombasBase" parent="Itens/Consumiveis" instance=ExtResource("6_j0yh2")]
+position = Vector2(2156, 463)
+
+[node name="Ima" parent="Itens/Consumiveis" instance=ExtResource("7_3m4ic")]
+position = Vector2(1452, 456)
+
+[node name="PocoesBase" parent="Itens/Consumiveis" instance=ExtResource("8_3m01d")]
+position = Vector2(834, 320)
+
+[node name="PararTempo" parent="Itens/Consumiveis" instance=ExtResource("9_0x63s")]
+position = Vector2(923, 171)
+
+[node name="MataTudo" parent="Itens/Consumiveis" instance=ExtResource("10_mgoll")]
+position = Vector2(152, 1047)
+
+[node name="Xp" type="Node" parent="Itens"]
+
+[node name="Quebraveis" type="Node" parent="Itens"]
+
+[node name="DinDin" type="Node" parent="Itens"]
+
+[node name="Camera" type="Node" parent="."]
+
+[node name="Personagem" type="Node" parent="."]
+
+[node name="Inimigos" type="Node" parent="."]
+
+[node name="Monstro" type="Node" parent="Inimigos"]
+
+[node name="Boss" type="Node" parent="Inimigos"]
+
+[node name="Interfaces" type="Node" parent="."]
+
+[node name="InterfaceDeMelhoriaDeAtributo" parent="Interfaces" instance=ExtResource("4_65yoc")]
+visible = false

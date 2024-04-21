@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpceuwac61h7m"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Controladores/Script/Camera.gd" id="1_rltm8"]
+
+[node name="Camera" type="Camera2D" groups=["Camera"]]
+script = ExtResource("1_rltm8")

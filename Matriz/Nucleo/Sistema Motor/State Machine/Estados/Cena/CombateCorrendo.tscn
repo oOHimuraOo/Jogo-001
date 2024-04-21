@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://drmeoal42i548"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/State Machine/Estados/Script/CombateCorrendo.gd" id="1_uqdi2"]
+
+[node name="CombateCorrendo" type="Node"]
+script = ExtResource("1_uqdi2")

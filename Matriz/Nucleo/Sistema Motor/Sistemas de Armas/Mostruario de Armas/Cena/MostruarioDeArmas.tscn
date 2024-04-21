@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://kebnoh26x3lj"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Sistemas de Armas/Mostruario de Armas/Script/MostruarioDeArmas.gd" id="1_blofq"]
+[ext_resource type="Texture2D" uid="uid://c6hw8uskon0a1" path="res://icon.svg" id="1_th3mi"]
+
+[node name="MostruarioDeArmas" type="Control"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 75.0
+offset_bottom = 75.0
+script = ExtResource("1_blofq")
+
+[node name="BotaoPlanoDeFundo" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_th3mi")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Organizador" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="Marginalizador" type="MarginContainer" parent="Organizador"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="EtiquetaNome" type="Label" parent="Organizador"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Nome"
+
+[node name="Organizador" type="HBoxContainer" parent="Organizador"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="EtiquetaNivel" type="Label" parent="Organizador/Organizador"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Nível:"
+
+[node name="EtiquetaNivelValor" type="Label" parent="Organizador/Organizador"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "10"
+
+[connection signal="button_down" from="BotaoPlanoDeFundo" to="." method="_on_botao_plano_de_fundo_button_down"]

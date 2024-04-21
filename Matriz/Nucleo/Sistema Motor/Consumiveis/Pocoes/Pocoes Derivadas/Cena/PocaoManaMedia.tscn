@@ -1,0 +1,140 @@
+[gd_scene load_steps=19 format=3 uid="uid://brphdae3710tr"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Consumiveis/Pocoes/Pocoes Derivadas/Script/PocaoManaMedia.gd" id="1_des4q"]
+[ext_resource type="Texture2D" uid="uid://cveocr0jqv77s" path="res://Assets/Place Holder/Objetos/Comidas/10.png" id="2_5821n"]
+[ext_resource type="Texture2D" uid="uid://cf3wo1df4a7t3" path="res://Assets/Place Holder/Objetos/Comidas/09.png" id="3_qhiw0"]
+[ext_resource type="Texture2D" uid="uid://bcxatij3al0an" path="res://Assets/Place Holder/Objetos/Comidas/08.png" id="4_nxhyo"]
+[ext_resource type="Texture2D" uid="uid://bmjwk1eeafc0g" path="res://Assets/Place Holder/Objetos/Comidas/07.png" id="5_gxxkr"]
+[ext_resource type="Texture2D" uid="uid://xetxum6hm612" path="res://Assets/Place Holder/Objetos/Comidas/05.png" id="6_776h8"]
+[ext_resource type="Texture2D" uid="uid://drch3ql61fme7" path="res://Assets/Place Holder/Objetos/Comidas/04.png" id="7_2ilqr"]
+[ext_resource type="Texture2D" uid="uid://bt0xsua5tg3l7" path="res://Assets/Place Holder/Objetos/Medikit/Health_Kit (16 x 16).png" id="8_wnwoc"]
+[ext_resource type="Texture2D" uid="uid://2tweyfwtdost" path="res://Assets/Place Holder/Objetos/Comidas/06.png" id="9_qbt64"]
+[ext_resource type="Texture2D" uid="uid://bhp1j7qc1uy52" path="res://Assets/Place Holder/Objetos/Medikit/Heart_Spin (16 x 16).png" id="10_g66ne"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yn7t0"]
+atlas = ExtResource("8_wnwoc")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bjoc"]
+atlas = ExtResource("9_qbt64")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_elbqi"]
+atlas = ExtResource("10_g66ne")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5kyff"]
+atlas = ExtResource("10_g66ne")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nteb8"]
+atlas = ExtResource("10_g66ne")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qcoh"]
+atlas = ExtResource("10_g66ne")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t1644"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5821n")
+}],
+"loop": true,
+"name": &"Pocao_de_estamina_grande",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_qhiw0")
+}],
+"loop": true,
+"name": &"Pocao_de_estamina_media",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_nxhyo")
+}],
+"loop": true,
+"name": &"Pocao_de_estamina_pequena",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_gxxkr")
+}],
+"loop": true,
+"name": &"Pocao_de_mana_grande",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_776h8")
+}],
+"loop": true,
+"name": &"Pocao_de_mana_media",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_2ilqr")
+}],
+"loop": true,
+"name": &"Pocao_de_mana_pequena",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yn7t0")
+}],
+"loop": true,
+"name": &"Pocao_de_vida_grande",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bjoc")
+}],
+"loop": true,
+"name": &"Pocao_de_vida_media",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_elbqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5kyff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nteb8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qcoh")
+}],
+"loop": true,
+"name": &"Pocao_de_vida_pequena",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ffvwn"]
+radius = 8.0
+
+[node name="PocaoManaMedia" type="CharacterBody2D" groups=["Coletavel", "Pocoes"]]
+collision_layer = 256
+collision_mask = 0
+script = ExtResource("1_des4q")
+
+[node name="Textura" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_t1644")
+animation = &"Pocao_de_vida_pequena"
+autoplay = "Pocao_de_vida_pequena"
+
+[node name="Colisao" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ffvwn")
+
+[node name="AtualizadoDeQuantidadeDeNodos" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true

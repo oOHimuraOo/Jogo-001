@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://46i70bu5tcig"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Script/Sons.gd" id="1_lxt76"]
+
+[node name="Sons" type="Node"]
+script = ExtResource("1_lxt76")

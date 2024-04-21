@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://fp0ssl5hqjec"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Script/Constantes.gd" id="1_5qb4d"]
+
+[node name="Constantes" type="Node"]
+script = ExtResource("1_5qb4d")

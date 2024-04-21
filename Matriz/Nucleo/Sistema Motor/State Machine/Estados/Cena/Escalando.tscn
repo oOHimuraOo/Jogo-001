@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgwewoh0u1mtx"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/State Machine/Estados/Script/Escalando.gd" id="1_27ee4"]
+
+[node name="Escalando" type="Node"]
+script = ExtResource("1_27ee4")

@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://bfh7qxp6ei54w"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Sistema de Vida/Script/Barra_De_Vida.gd" id="1_f1gho"]
+
+[sub_resource type="Gradient" id="Gradient_ux28e"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_p8eqx"]
+gradient = SubResource("Gradient_ux28e")
+
+[sub_resource type="Gradient" id="Gradient_dkb50"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_3jfxa"]
+gradient = SubResource("Gradient_dkb50")
+
+[sub_resource type="Gradient" id="Gradient_60mg5"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.853581, 0.481466, 0.512509, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_enxsh"]
+gradient = SubResource("Gradient_60mg5")
+
+[node name="BarraDeVida" type="Control"]
+custom_minimum_size = Vector2(50, 5)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 50.0
+offset_bottom = 5.0
+script = ExtResource("1_f1gho")
+
+[node name="Organizador" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 2
+
+[node name="IconeVida" type="TextureRect" parent="Organizador"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_p8eqx")
+expand_mode = 1
+
+[node name="BarraVida" type="TextureProgressBar" parent="Organizador"]
+layout_mode = 2
+size_flags_horizontal = 3
+value = 75.0
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_3jfxa")
+texture_progress = SubResource("GradientTexture1D_enxsh")

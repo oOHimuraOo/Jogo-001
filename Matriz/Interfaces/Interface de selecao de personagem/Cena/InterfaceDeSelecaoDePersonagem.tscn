@@ -1,0 +1,615 @@
+[gd_scene load_steps=49 format=3 uid="uid://cfj3brxik4ipm"]
+
+[ext_resource type="Script" path="res://Matriz/Interfaces/Interface de selecao de personagem/Script/InterfaceDeSelecaoDePersonagem.gd" id="1_3coqy"]
+[ext_resource type="Texture2D" uid="uid://c6hw8uskon0a1" path="res://icon.svg" id="1_dt1xs"]
+
+[sub_resource type="Gradient" id="Gradient_ojs4v"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ftjto"]
+gradient = SubResource("Gradient_ojs4v")
+
+[sub_resource type="Gradient" id="Gradient_satb7"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_3ukwh"]
+gradient = SubResource("Gradient_satb7")
+
+[sub_resource type="Gradient" id="Gradient_tylkl"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ft402"]
+gradient = SubResource("Gradient_tylkl")
+
+[sub_resource type="Gradient" id="Gradient_xtqmw"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_poyy7"]
+gradient = SubResource("Gradient_xtqmw")
+
+[sub_resource type="Gradient" id="Gradient_6kahw"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nc3ym"]
+gradient = SubResource("Gradient_6kahw")
+
+[sub_resource type="Gradient" id="Gradient_blcjf"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_rnng8"]
+gradient = SubResource("Gradient_blcjf")
+
+[sub_resource type="Gradient" id="Gradient_vqwj0"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_pkkay"]
+gradient = SubResource("Gradient_vqwj0")
+
+[sub_resource type="Gradient" id="Gradient_kn3qm"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ehwhi"]
+gradient = SubResource("Gradient_kn3qm")
+
+[sub_resource type="Gradient" id="Gradient_yvf6b"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wvg6d"]
+gradient = SubResource("Gradient_yvf6b")
+
+[sub_resource type="Gradient" id="Gradient_02rq5"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_d3jm8"]
+gradient = SubResource("Gradient_02rq5")
+
+[sub_resource type="Gradient" id="Gradient_e3pfc"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_au2jn"]
+gradient = SubResource("Gradient_e3pfc")
+
+[sub_resource type="Gradient" id="Gradient_foe8v"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wukdn"]
+gradient = SubResource("Gradient_foe8v")
+
+[sub_resource type="Gradient" id="Gradient_7737p"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xtovn"]
+gradient = SubResource("Gradient_7737p")
+
+[sub_resource type="Gradient" id="Gradient_tytjg"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qbcyr"]
+gradient = SubResource("Gradient_tytjg")
+
+[sub_resource type="Gradient" id="Gradient_kxhp5"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xmgo0"]
+gradient = SubResource("Gradient_kxhp5")
+
+[sub_resource type="Gradient" id="Gradient_dhuml"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_tyi6u"]
+gradient = SubResource("Gradient_dhuml")
+
+[sub_resource type="Gradient" id="Gradient_6eky4"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_spn0r"]
+gradient = SubResource("Gradient_6eky4")
+
+[sub_resource type="Gradient" id="Gradient_2t7oa"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_b2s23"]
+gradient = SubResource("Gradient_2t7oa")
+
+[sub_resource type="Gradient" id="Gradient_uf3yx"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_33jv1"]
+gradient = SubResource("Gradient_uf3yx")
+
+[sub_resource type="Gradient" id="Gradient_p5e23"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_reupd"]
+gradient = SubResource("Gradient_p5e23")
+
+[sub_resource type="Gradient" id="Gradient_h8mrc"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4e82g"]
+gradient = SubResource("Gradient_h8mrc")
+
+[sub_resource type="Gradient" id="Gradient_jpr3f"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_7fvw2"]
+gradient = SubResource("Gradient_jpr3f")
+
+[sub_resource type="Gradient" id="Gradient_go74i"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_kwwdb"]
+gradient = SubResource("Gradient_go74i")
+
+[node name="InterfaceDeSelecaoDePersonagem" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3coqy")
+
+[node name="PlanoDeFundo" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_dt1xs")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="OrganizadorHorizontal" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador"]
+layout_mode = 2
+
+[node name="OrganizadorVertical" type="VBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="InformacoesTitulo" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Informacoes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorVida" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="VidaImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorVida"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_ftjto")
+expand_mode = 1
+
+[node name="VidaValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorVida"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Vida: 999/999"
+vertical_alignment = 1
+
+[node name="OrganizadorMana" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="ManaImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorMana"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_3ukwh")
+expand_mode = 1
+
+[node name="ManaValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorMana"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Mana: 999/999"
+vertical_alignment = 1
+
+[node name="OrganizadorEstamina" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="EstaminaImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorEstamina"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_ft402")
+expand_mode = 1
+
+[node name="EstaminaValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorEstamina"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Estamina: 999/999"
+vertical_alignment = 1
+
+[node name="OrganizadorForca" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="ForcaImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorForca"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_poyy7")
+expand_mode = 1
+
+[node name="ForcaValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorForca"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Força: 99"
+vertical_alignment = 1
+
+[node name="OrganizadorDestreza" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="DestrezaImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorDestreza"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_nc3ym")
+expand_mode = 1
+
+[node name="DestrezaValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorDestreza"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Destreza: 99"
+vertical_alignment = 1
+
+[node name="OrganizadorConstituicao" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="ConstituicaoImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorConstituicao"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_rnng8")
+expand_mode = 1
+
+[node name="ConstituicaoValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorConstituicao"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Constituicao: 99"
+vertical_alignment = 1
+
+[node name="OrganizadorPulos" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="PulosImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorPulos"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_pkkay")
+expand_mode = 1
+
+[node name="PulosValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorPulos"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Pulos: 99"
+vertical_alignment = 1
+
+[node name="OrganizadorVelocidade" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="VelocidadeImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorVelocidade"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_ehwhi")
+expand_mode = 1
+
+[node name="VelocidadeValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorVelocidade"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Velocidade: 999"
+vertical_alignment = 1
+
+[node name="OrganizadorSorte" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="SorteImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorSorte"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wvg6d")
+expand_mode = 1
+
+[node name="SorteValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorSorte"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Sorte: 99"
+vertical_alignment = 1
+
+[node name="OrganizadorArma" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="ArmaImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorArma"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_d3jm8")
+expand_mode = 1
+
+[node name="ArmaValor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorArma"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Arma: Ak40"
+vertical_alignment = 1
+
+[node name="OrganizadorHabilidade1" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Habilidade1Imagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade1"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_au2jn")
+expand_mode = 1
+
+[node name="Habilidade1Valor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Habilidade: Nenhuma"
+vertical_alignment = 1
+
+[node name="OrganizadorHabilidade2" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Habilidade2Imagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade2"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wukdn")
+expand_mode = 1
+
+[node name="Habilidade2Valor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Habilidade: Nenhuma"
+vertical_alignment = 1
+
+[node name="OrganizadorHabilidade3" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Habilidade3Imagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade3"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_xtovn")
+expand_mode = 1
+
+[node name="Habilidade3Valor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Habilidade: Nenhuma"
+vertical_alignment = 1
+
+[node name="OrganizadorHabilidade4" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Habilidade4Imagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade4"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_qbcyr")
+expand_mode = 1
+
+[node name="Habilidade4Valor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Habilidade: Nenhuma"
+vertical_alignment = 1
+
+[node name="OrganizadorHabilidade5" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Habilidade5Imagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade5"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_xmgo0")
+expand_mode = 1
+
+[node name="Habilidade5Valor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade5"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Habilidade: Nenhuma"
+vertical_alignment = 1
+
+[node name="OrganizadorHabilidade6" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Habilidade6Imagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade6"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_tyi6u")
+expand_mode = 1
+
+[node name="Habilidade6Valor" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/OrganizadorHabilidade6"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Habilidade: Nenhuma"
+vertical_alignment = 1
+
+[node name="PlanoDeFundo" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = SubResource("GradientTexture1D_spn0r")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Centralizador" type="CenterContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/PlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="VideoDemonstrativoPersonagem" type="VideoStreamPlayer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorVertical/PlanoDeFundo/Centralizador"]
+custom_minimum_size = Vector2(350, 350)
+layout_mode = 2
+
+[node name="OrganizadorSelecaoPersonagens" type="VBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorDeScroll" type="ScrollContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OrganizadorDeGrid" type="GridContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorDeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 14
+theme_override_constants/v_separation = 14
+columns = 7
+
+[node name="OrganizadorDeDescritivo" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens"]
+layout_mode = 2
+
+[node name="PlanoDeFundo" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorDeDescritivo"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = SubResource("GradientTexture1D_b2s23")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorDeDescritivo/PlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="OrganizadorHorizontal" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorDeDescritivo/PlanoDeFundo/Marginalizador"]
+layout_mode = 2
+
+[node name="PlanoDeFundoRetrato" type="NinePatchRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorDeDescritivo/PlanoDeFundo/Marginalizador/OrganizadorHorizontal"]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_33jv1")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Marginalizador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorDeDescritivo/PlanoDeFundo/Marginalizador/OrganizadorHorizontal/PlanoDeFundoRetrato"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RetratoImagem" type="TextureRect" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorDeDescritivo/PlanoDeFundo/Marginalizador/OrganizadorHorizontal/PlanoDeFundoRetrato/Marginalizador"]
+layout_mode = 2
+texture = SubResource("GradientTexture1D_reupd")
+expand_mode = 1
+
+[node name="AtivadorDeScroll" type="ScrollContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorDeDescritivo/PlanoDeFundo/Marginalizador/OrganizadorHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OrganizadorVertical" type="VBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorDeDescritivo/PlanoDeFundo/Marginalizador/OrganizadorHorizontal/AtivadorDeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TituloDoDescritivo" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorDeDescritivo/PlanoDeFundo/Marginalizador/OrganizadorHorizontal/AtivadorDeScroll/OrganizadorVertical"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Titulo"
+
+[node name="TextoDescricao" type="RichTextLabel" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorDeDescritivo/PlanoDeFundo/Marginalizador/OrganizadorHorizontal/AtivadorDeScroll/OrganizadorVertical"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 20
+text = "Descrição"
+
+[node name="OrganizadorHorizontal" type="HBoxContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens"]
+layout_mode = 2
+
+[node name="Espacador" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BotaoConfirmar" type="TextureButton" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorHorizontal"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_4e82g")
+texture_pressed = SubResource("GradientTexture1D_7fvw2")
+texture_disabled = SubResource("GradientTexture1D_kwwdb")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ConfirmarTXT" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorHorizontal/BotaoConfirmar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Confirma"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoCancelar" type="TextureButton" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorHorizontal"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_4e82g")
+texture_pressed = SubResource("GradientTexture1D_7fvw2")
+texture_disabled = SubResource("GradientTexture1D_kwwdb")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="CancelarTXT" type="Label" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorHorizontal/BotaoCancelar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Cancelar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Espacador2" type="MarginContainer" parent="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorHorizontal/BotaoConfirmar" to="." method="_on_botao_confirmar_pressed"]
+[connection signal="pressed" from="PlanoDeFundo/Marginalizador/OrganizadorHorizontal/OrganizadorSelecaoPersonagens/OrganizadorHorizontal/BotaoCancelar" to="." method="_on_botao_cancelar_pressed"]

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d1ijbxn7ugtds"
+path="res://.godot/imported/GRASS - Run Short 8.wav-e4b95ce53d83b09e9904f4fb3d54f030.sample"
+
+[deps]
+
+source_file="res://Assets/Place Holder/Sons/NA_Character Footsteps (Dirt & Grass) - Pack 1/Run/Grass/GRASS - Run Short 8.wav"
+dest_files=["res://.godot/imported/GRASS - Run Short 8.wav-e4b95ce53d83b09e9904f4fb3d54f030.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

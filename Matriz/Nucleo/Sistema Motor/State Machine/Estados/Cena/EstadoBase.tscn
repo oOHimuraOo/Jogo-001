@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca5kv8yed3o07"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/State Machine/Estados/Script/Estado_base.gd" id="1_4bpoe"]
+
+[node name="EstadoBase" type="Node"]
+script = ExtResource("1_4bpoe")

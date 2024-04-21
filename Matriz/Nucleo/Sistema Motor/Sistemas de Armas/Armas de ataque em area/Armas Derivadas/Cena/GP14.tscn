@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://wswymp3rj6s6"]
+
+[ext_resource type="Texture2D" uid="uid://fbtu7gu0own6" path="res://Assets/Place Holder/Armas/free-guns-pixel-art/Bazooka.png" id="1_aq2pt"]
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Sistemas de Armas/Armas de ataque em area/Armas Derivadas/Script/GP14.gd" id="1_hno54"]
+[ext_resource type="Texture2D" uid="uid://bd5yk2f8pf3n0" path="res://Assets/Place Holder/Armas/Mira/Aim 3.png" id="3_g2tet"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_haobh"]
+radius = 150.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rlb13"]
+atlas = ExtResource("3_g2tet")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_udb2o"]
+atlas = ExtResource("3_g2tet")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_basrn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rlb13")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_udb2o")
+}],
+"loop": true,
+"name": &"Mira",
+"speed": 5.0
+}]
+
+[node name="Gp14" type="Node2D"]
+script = ExtResource("1_hno54")
+
+[node name="AreaMaximaDeAlcance" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaMaximaDeAlcance"]
+shape = SubResource("CircleShape2D_haobh")
+
+[node name="Textura" type="Sprite2D" parent="."]
+texture = ExtResource("1_aq2pt")
+
+[node name="PontoDeSaida" type="Marker2D" parent="."]
+position = Vector2(150, 0)
+
+[node name="Cooldown" type="Timer" parent="."]
+one_shot = true
+
+[node name="mira" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_basrn")
+animation = &"Mira"
+autoplay = "Mira"

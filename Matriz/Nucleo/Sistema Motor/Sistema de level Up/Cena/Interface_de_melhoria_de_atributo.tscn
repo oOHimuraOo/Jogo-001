@@ -1,0 +1,1320 @@
+[gd_scene load_steps=49 format=3 uid="uid://byyrkay26tmke"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Sistema de level Up/Script/Interface_de_melhoria_de_atributo.gd" id="1_nayew"]
+[ext_resource type="PackedScene" uid="uid://nvn41rctapg" path="res://Matriz/Nucleo/Sistema Motor/Minimapa/Cena/Minimapa.tscn" id="2_0p8wf"]
+
+[sub_resource type="Gradient" id="Gradient_vc5y6"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_gai7h"]
+gradient = SubResource("Gradient_vc5y6")
+
+[sub_resource type="Gradient" id="Gradient_4bspb"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_tshbs"]
+gradient = SubResource("Gradient_4bspb")
+
+[sub_resource type="Gradient" id="Gradient_h2jxg"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_416r5"]
+gradient = SubResource("Gradient_h2jxg")
+
+[sub_resource type="Gradient" id="Gradient_jwlpo"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ebgjo"]
+gradient = SubResource("Gradient_jwlpo")
+
+[sub_resource type="Gradient" id="Gradient_nqegd"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_amhgq"]
+gradient = SubResource("Gradient_nqegd")
+
+[sub_resource type="Gradient" id="Gradient_2f52q"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_dtxnk"]
+gradient = SubResource("Gradient_2f52q")
+
+[sub_resource type="Gradient" id="Gradient_0wbgm"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_t4rme"]
+gradient = SubResource("Gradient_0wbgm")
+
+[sub_resource type="Gradient" id="Gradient_k0khg"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4426q"]
+gradient = SubResource("Gradient_k0khg")
+
+[sub_resource type="Gradient" id="Gradient_4ipyf"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_lf0kl"]
+gradient = SubResource("Gradient_4ipyf")
+
+[sub_resource type="Gradient" id="Gradient_ami8t"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4txt2"]
+gradient = SubResource("Gradient_ami8t")
+
+[sub_resource type="Gradient" id="Gradient_c368i"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_c3af1"]
+gradient = SubResource("Gradient_c368i")
+
+[sub_resource type="Gradient" id="Gradient_1rn4f"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_a6kly"]
+gradient = SubResource("Gradient_1rn4f")
+
+[sub_resource type="Gradient" id="Gradient_78yut"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ig4td"]
+gradient = SubResource("Gradient_78yut")
+
+[sub_resource type="Gradient" id="Gradient_4q74u"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_b8sgd"]
+gradient = SubResource("Gradient_4q74u")
+
+[sub_resource type="Gradient" id="Gradient_l2mnk"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nxbji"]
+gradient = SubResource("Gradient_l2mnk")
+
+[sub_resource type="Gradient" id="Gradient_f6yib"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xjkad"]
+gradient = SubResource("Gradient_f6yib")
+
+[sub_resource type="Gradient" id="Gradient_a4d5k"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mx0pk"]
+gradient = SubResource("Gradient_a4d5k")
+
+[sub_resource type="Gradient" id="Gradient_ic7nb"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_hiis0"]
+gradient = SubResource("Gradient_ic7nb")
+
+[sub_resource type="Gradient" id="Gradient_topis"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_bqcxg"]
+gradient = SubResource("Gradient_topis")
+
+[sub_resource type="Gradient" id="Gradient_qe7v4"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wmk8s"]
+gradient = SubResource("Gradient_qe7v4")
+
+[sub_resource type="Gradient" id="Gradient_4k0js"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_b7g3i"]
+gradient = SubResource("Gradient_4k0js")
+
+[sub_resource type="Gradient" id="Gradient_2n51b"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_gsw5o"]
+gradient = SubResource("Gradient_2n51b")
+
+[sub_resource type="Gradient" id="Gradient_wsjo2"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0adui"]
+gradient = SubResource("Gradient_wsjo2")
+
+[node name="InterfaceDeMelhoriaDeAtributo" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nayew")
+
+[node name="Organizador" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="BackgroundCantoEsquerdo" type="TextureRect" parent="Organizador"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Marginalizador" type="MarginContainer" parent="Organizador/BackgroundCantoEsquerdo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="Organizador" type="VBoxContainer" parent="Organizador/BackgroundCantoEsquerdo/Marginalizador"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BacgroundTituloMapa" type="TextureRect" parent="Organizador/BackgroundCantoEsquerdo/Marginalizador/Organizador"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_gai7h")
+
+[node name="TituloMapa" type="Label" parent="Organizador/BackgroundCantoEsquerdo/Marginalizador/Organizador/BacgroundTituloMapa"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Mapa"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mapa" type="TextureRect" parent="Organizador/BackgroundCantoEsquerdo/Marginalizador/Organizador"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = SubResource("GradientTexture1D_tshbs")
+
+[node name="CenterContainer" type="CenterContainer" parent="Organizador/BackgroundCantoEsquerdo/Marginalizador/Organizador/Mapa"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Minimapa" parent="Organizador/BackgroundCantoEsquerdo/Marginalizador/Organizador/Mapa/CenterContainer" instance=ExtResource("2_0p8wf")]
+layout_mode = 2
+
+[node name="BackgroundCentro" type="TextureRect" parent="Organizador"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="OrganizadorPrincpal" type="VBoxContainer" parent="Organizador/BackgroundCentro"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="MaginalizadorSuperior" type="MarginContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 55
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 55
+
+[node name="OrganizadorDeRecurssos" type="HBoxContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/MaginalizadorSuperior"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="ImagemPontosDisponiveis" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/MaginalizadorSuperior/OrganizadorDeRecurssos"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_416r5")
+expand_mode = 1
+
+[node name="PontosDisponiveis" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/MaginalizadorSuperior/OrganizadorDeRecurssos"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 36
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ImagemDinheiroDisponivel" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/MaginalizadorSuperior/OrganizadorDeRecurssos"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_ebgjo")
+expand_mode = 1
+
+[node name="DinheiroDisponivel" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/MaginalizadorSuperior/OrganizadorDeRecurssos"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 36
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ImagemAlturaAtual" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/MaginalizadorSuperior/OrganizadorDeRecurssos"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_amhgq")
+expand_mode = 1
+
+[node name="AlturaAtual" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/MaginalizadorSuperior/OrganizadorDeRecurssos"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 36
+text = "9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorVida" type="HBoxContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BotaoNegativoVida" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida" groups=["BotoesNegativos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_dtxnk")
+texture_pressed = SubResource("GradientTexture1D_t4rme")
+texture_disabled = SubResource("GradientTexture1D_4426q")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NegativoVIda" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida/BotaoNegativoVida"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BacgroundTituloVida" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TituloVida" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida/BacgroundTituloVida"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Vida"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoPositivoVida" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida" groups=["BotoesPositivos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_lf0kl")
+texture_pressed = SubResource("GradientTexture1D_4txt2")
+texture_disabled = SubResource("GradientTexture1D_c3af1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PositivoVida" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida/BotaoPositivoVida"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundValorAtualVida" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorAtualVida" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida/BackgroundValorAtualVida"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "23"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundValorFinalVida" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorFinalVida" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida/BackgroundValorFinalVida"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorMana" type="HBoxContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BotaoNegativoMana" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana" groups=["BotoesNegativos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_dtxnk")
+texture_pressed = SubResource("GradientTexture1D_t4rme")
+texture_disabled = SubResource("GradientTexture1D_4426q")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NegativoMana" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana/BotaoNegativoMana"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BacgroundTituloMana" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TituloMana" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana/BacgroundTituloMana"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Mana"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoPositivoMana" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana" groups=["BotoesPositivos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_lf0kl")
+texture_pressed = SubResource("GradientTexture1D_4txt2")
+texture_disabled = SubResource("GradientTexture1D_c3af1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PositivoMana" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana/BotaoPositivoMana"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BacgroundValorAtualMana" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorAtualMana" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana/BacgroundValorAtualMana"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "23"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BacgroundValorFinalMana" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorFinalMana" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana/BacgroundValorFinalMana"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorEstamina" type="HBoxContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BotaoNegativoEstamina" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina" groups=["BotoesNegativos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_dtxnk")
+texture_pressed = SubResource("GradientTexture1D_t4rme")
+texture_disabled = SubResource("GradientTexture1D_4426q")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NegativoEstamina" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina/BotaoNegativoEstamina"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BagroundTituloEstamina" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TituloEstamina" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina/BagroundTituloEstamina"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Estamina"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoPositivoEstamina" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina" groups=["BotoesPositivos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_lf0kl")
+texture_pressed = SubResource("GradientTexture1D_4txt2")
+texture_disabled = SubResource("GradientTexture1D_c3af1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PositivoEstamina" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina/BotaoPositivoEstamina"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundValorAtualEstamina" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorAtualEstamina" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina/BackgroundValorAtualEstamina"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "23"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundValorFinalEstamina" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorFinalEstamina" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina/BackgroundValorFinalEstamina"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorForca" type="HBoxContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BotaoNegativoForca" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca" groups=["BotoesNegativos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_dtxnk")
+texture_pressed = SubResource("GradientTexture1D_t4rme")
+texture_disabled = SubResource("GradientTexture1D_4426q")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NegativoForca" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca/BotaoNegativoForca"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BacgroundTituloForca" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TituloForca" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca/BacgroundTituloForca"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Força"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoPositivoForca" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca" groups=["BotoesPositivos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_lf0kl")
+texture_pressed = SubResource("GradientTexture1D_4txt2")
+texture_disabled = SubResource("GradientTexture1D_c3af1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PositivoForca" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca/BotaoPositivoForca"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BacgroundValorAtualForca" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorAtualForca" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca/BacgroundValorAtualForca"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "23"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundValorFinalForca" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorFinalForca" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca/BackgroundValorFinalForca"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorDestreza" type="HBoxContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BotaoNegativoDestreza" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza" groups=["BotoesNegativos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_dtxnk")
+texture_pressed = SubResource("GradientTexture1D_t4rme")
+texture_disabled = SubResource("GradientTexture1D_4426q")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NegativoDestreza" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza/BotaoNegativoDestreza"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BacgroundTituloDestreza" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TituloDestreza" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza/BacgroundTituloDestreza"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Destreza"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoPositivoDestreza" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza" groups=["BotoesPositivos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_lf0kl")
+texture_pressed = SubResource("GradientTexture1D_4txt2")
+texture_disabled = SubResource("GradientTexture1D_c3af1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PositivoDestreza" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza/BotaoPositivoDestreza"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundValorAtualDestreza" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorAtualDestreza" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza/BackgroundValorAtualDestreza"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "23"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundValorFinalDestreza" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorFinalDestreza" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza/BackgroundValorFinalDestreza"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrganizadorConstituicao" type="HBoxContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BotaoNegativoConstituicao" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao" groups=["BotoesNegativos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_dtxnk")
+texture_pressed = SubResource("GradientTexture1D_t4rme")
+texture_disabled = SubResource("GradientTexture1D_4426q")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NegativoConstituicao" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao/BotaoNegativoConstituicao"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundTituloConstituicao" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TituloConstituicao" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao/BackgroundTituloConstituicao"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Cons..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoPositivoConstituicao" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao" groups=["BotoesPositivos"]]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_lf0kl")
+texture_pressed = SubResource("GradientTexture1D_4txt2")
+texture_disabled = SubResource("GradientTexture1D_c3af1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PositivoConstituicao" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao/BotaoPositivoConstituicao"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundValorAtualConstituicao" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorAtualConstituicao" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao/BackgroundValorAtualConstituicao"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "23"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundValorFinalConstituicao" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="ValorFinalConstituicao" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao/BackgroundValorFinalConstituicao"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundBotoesFinais" type="TextureRect" parent="Organizador/BackgroundCentro/OrganizadorPrincpal"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="OrganizadorBotoesFinais" type="HBoxContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="MarginalizadorEsquerdo" type="MarginContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+
+[node name="CentralizadorDeBotoes" type="VBoxContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="MarginalizadorSuperior" type="MarginContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Botoes" type="HBoxContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_constants/separation = 19
+
+[node name="BotaoConfirmarOuSair" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes/Botoes"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_a6kly")
+texture_pressed = SubResource("GradientTexture1D_ig4td")
+texture_disabled = SubResource("GradientTexture1D_b8sgd")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ConfirmarOuSair" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes/Botoes/BotaoConfirmarOuSair"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Confirmar/Sair"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoAleatorizarOuDesistir" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes/Botoes"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_a6kly")
+texture_pressed = SubResource("GradientTexture1D_ig4td")
+texture_disabled = SubResource("GradientTexture1D_b8sgd")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="AleatorizarOuDesistir" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes/Botoes/BotaoAleatorizarOuDesistir"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Cancelar/Desistir"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoMelhorarArma" type="TextureButton" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes/Botoes"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_a6kly")
+texture_pressed = SubResource("GradientTexture1D_ig4td")
+texture_disabled = SubResource("GradientTexture1D_b8sgd")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MelhorarArmaTitulo" type="Label" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes/Botoes/BotaoMelhorarArma"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Melhorar Arma"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginalizadorInferior" type="MarginContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginalizadoroDireita" type="MarginContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+
+[node name="MarginalizadorInferior" type="MarginContainer" parent="Organizador/BackgroundCentro/OrganizadorPrincpal"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BacgroundCantoDireito" type="TextureRect" parent="Organizador"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Marginalizador" type="MarginContainer" parent="Organizador/BacgroundCantoDireito"]
+layout_mode = 2
+offset_right = 640.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="OrganizadorItensEInformacoes" type="VBoxContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BackgroundTituloArmasPassivas" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_gai7h")
+
+[node name="TituloArmasPassivas" type="Label" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundTituloArmasPassivas"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Armas Passivas
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BacgroundSlotsArmasPassivas" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_nxbji")
+
+[node name="OrganizadorArmasPassivas" type="VBoxContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BacgroundSlotsArmasPassivas"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="MarginalizadorSuperior" type="MarginContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BacgroundSlotsArmasPassivas/OrganizadorArmasPassivas"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SlotsArmasPassivas" type="GridContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BacgroundSlotsArmasPassivas/OrganizadorArmasPassivas"]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+columns = 6
+
+[node name="ArmasPassivasSlot1" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BacgroundSlotsArmasPassivas/OrganizadorArmasPassivas/SlotsArmasPassivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_xjkad")
+expand_mode = 1
+
+[node name="ArmasPassivasSlot2" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BacgroundSlotsArmasPassivas/OrganizadorArmasPassivas/SlotsArmasPassivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="ArmasPassivasSlot3" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BacgroundSlotsArmasPassivas/OrganizadorArmasPassivas/SlotsArmasPassivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="ArmasPassivasSlot4" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BacgroundSlotsArmasPassivas/OrganizadorArmasPassivas/SlotsArmasPassivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="ArmasPassivasSlot5" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BacgroundSlotsArmasPassivas/OrganizadorArmasPassivas/SlotsArmasPassivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="ArmasPassivasSlot6" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BacgroundSlotsArmasPassivas/OrganizadorArmasPassivas/SlotsArmasPassivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="MarginalizadorInferior" type="MarginContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BacgroundSlotsArmasPassivas/OrganizadorArmasPassivas"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BackgroundTituloArmasAtivas" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_hiis0")
+
+[node name="TituloArmasAtivas" type="Label" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundTituloArmasAtivas"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Armas Ativas
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundSlotsArmasAtivas" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_bqcxg")
+
+[node name="OrganizadorArmasAtivas" type="VBoxContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsArmasAtivas"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="MarginalizadorSuperior" type="MarginContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsArmasAtivas/OrganizadorArmasAtivas"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SlotsArmasAtivas" type="GridContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsArmasAtivas/OrganizadorArmasAtivas"]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+columns = 6
+
+[node name="ArmasAtivasSlot1" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsArmasAtivas/OrganizadorArmasAtivas/SlotsArmasAtivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_xjkad")
+expand_mode = 1
+
+[node name="ArmasAtivasSlot2" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsArmasAtivas/OrganizadorArmasAtivas/SlotsArmasAtivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="ArmasAtivasSlot3" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsArmasAtivas/OrganizadorArmasAtivas/SlotsArmasAtivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="ArmasAtivasSlot4" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsArmasAtivas/OrganizadorArmasAtivas/SlotsArmasAtivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="ArmasAtivasSlot5" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsArmasAtivas/OrganizadorArmasAtivas/SlotsArmasAtivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="ArmasAtivasSlot6" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsArmasAtivas/OrganizadorArmasAtivas/SlotsArmasAtivas"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="MarginalizadorInferior" type="MarginContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsArmasAtivas/OrganizadorArmasAtivas"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BackgroundTituloHabilidas" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_wmk8s")
+
+[node name="TituloHabilidades" type="Label" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundTituloHabilidas"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Habilidades"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundSlotsHabilidades" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_b7g3i")
+
+[node name="OrganizadorHabilidades" type="VBoxContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsHabilidades"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="MarginalizadorSuperior" type="MarginContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsHabilidades/OrganizadorHabilidades"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SlotsHabilidades" type="GridContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsHabilidades/OrganizadorHabilidades"]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+columns = 6
+
+[node name="HabilidadesSlot1" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsHabilidades/OrganizadorHabilidades/SlotsHabilidades"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_xjkad")
+expand_mode = 1
+
+[node name="HabilidadesSlot2" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsHabilidades/OrganizadorHabilidades/SlotsHabilidades"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="HabilidadesSlot3" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsHabilidades/OrganizadorHabilidades/SlotsHabilidades"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="HabilidadesSlot4" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsHabilidades/OrganizadorHabilidades/SlotsHabilidades"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="HabilidadesSlot5" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsHabilidades/OrganizadorHabilidades/SlotsHabilidades"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="HabilidadesSlot6" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsHabilidades/OrganizadorHabilidades/SlotsHabilidades"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_mx0pk")
+expand_mode = 1
+
+[node name="MarginalizadorInferior" type="MarginContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundSlotsHabilidades/OrganizadorHabilidades"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BackgroundTituloInformacoes" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_gsw5o")
+
+[node name="TituloInformacoes" type="Label" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundTituloInformacoes"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Informacoes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundInformacoes" type="TextureRect" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes"]
+custom_minimum_size = Vector2(0, 450)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_0adui")
+
+[node name="OrganizadorInformacoes" type="VBoxContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundInformacoes"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Centralizador" type="MarginContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundInformacoes/OrganizadorInformacoes"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="AtivadorDeScroll" type="ScrollContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundInformacoes/OrganizadorInformacoes/Centralizador"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="OrganizadorDeLista" type="VBoxContainer" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundInformacoes/OrganizadorInformacoes/Centralizador/AtivadorDeScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextoInformacoes" type="RichTextLabel" parent="Organizador/BacgroundCantoDireito/Marginalizador/OrganizadorItensEInformacoes/BackgroundInformacoes/OrganizadorInformacoes/Centralizador/AtivadorDeScroll/OrganizadorDeLista"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Aqui aparecera a descricao sobre o item selecionado."
+
+[node name="SeguradorTemporario" type="Node" parent="."]
+
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida/BotaoNegativoVida" to="." method="_on_botao_negativo_vida_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorVida/BotaoPositivoVida" to="." method="_on_botao_positivo_vida_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana/BotaoNegativoMana" to="." method="_on_botao_negativo_mana_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorMana/BotaoPositivoMana" to="." method="_on_botao_positivo_mana_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina/BotaoNegativoEstamina" to="." method="_on_botao_negativo_estamina_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorEstamina/BotaoPositivoEstamina" to="." method="_on_botao_positivo_estamina_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca/BotaoNegativoForca" to="." method="_on_botao_negativo_forca_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorForca/BotaoPositivoForca" to="." method="_on_botao_positivo_forca_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza/BotaoNegativoDestreza" to="." method="_on_botao_negativo_destreza_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorDestreza/BotaoPositivoDestreza" to="." method="_on_botao_positivo_destreza_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao/BotaoNegativoConstituicao" to="." method="_on_botao_negativo_constituicao_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/OrganizadorConstituicao/BotaoPositivoConstituicao" to="." method="_on_botao_positivo_constituicao_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes/Botoes/BotaoConfirmarOuSair" to="." method="_on_botao_confirmar_ou_sair_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes/Botoes/BotaoAleatorizarOuDesistir" to="." method="_on_botao_aleatorizar_ou_desistir_pressed"]
+[connection signal="pressed" from="Organizador/BackgroundCentro/OrganizadorPrincpal/BackgroundBotoesFinais/OrganizadorBotoesFinais/CentralizadorDeBotoes/Botoes/BotaoMelhorarArma" to="." method="_on_botao_melhorar_arma_pressed"]

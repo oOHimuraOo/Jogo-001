@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://tdlpt8dp8lyp"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Script/Arrays.gd" id="1_eo5d4"]
+
+[node name="Arrays" type="Node"]
+script = ExtResource("1_eo5d4")

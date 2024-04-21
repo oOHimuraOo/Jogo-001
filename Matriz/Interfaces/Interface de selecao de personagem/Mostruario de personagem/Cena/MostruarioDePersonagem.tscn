@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://btx4sqommchpm"]
+
+[sub_resource type="Gradient" id="Gradient_o1d4w"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_g5ff1"]
+gradient = SubResource("Gradient_o1d4w")
+
+[node name="MostruarioDePersonagem" type="VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(0, 175)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_g5ff1")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Nome"
+horizontal_alignment = 1
+vertical_alignment = 1

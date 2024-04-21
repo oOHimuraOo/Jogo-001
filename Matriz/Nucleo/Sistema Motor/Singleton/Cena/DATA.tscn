@@ -1,0 +1,30 @@
+[gd_scene load_steps=10 format=3 uid="uid://d3ktev0utujc4"]
+
+[ext_resource type="Script" path="res://Matriz/Nucleo/Sistema Motor/Singleton/Script/DATA.gd" id="1_scxds"]
+[ext_resource type="PackedScene" uid="uid://tdlpt8dp8lyp" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Cena/Arrays.tscn" id="2_h0idf"]
+[ext_resource type="PackedScene" uid="uid://m7td68i0ng8p" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Cena/Concatenacoes.tscn" id="3_kw6h4"]
+[ext_resource type="PackedScene" uid="uid://fp0ssl5hqjec" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Cena/Constantes.tscn" id="4_x4iku"]
+[ext_resource type="PackedScene" uid="uid://cm6jhqqx0sr45" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Cena/Database.tscn" id="5_gxl8o"]
+[ext_resource type="PackedScene" uid="uid://cep5qnyw34nsl" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Cena/Dicionarios.tscn" id="6_vbom1"]
+[ext_resource type="PackedScene" uid="uid://cnlgrmvifd3u8" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Cena/Enumeracoes.tscn" id="7_7jm4s"]
+[ext_resource type="PackedScene" uid="uid://cqr0xm24xc5fb" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Cena/Variaveis.tscn" id="8_p4hxr"]
+[ext_resource type="PackedScene" uid="uid://46i70bu5tcig" path="res://Matriz/Nucleo/Sistema Motor/Scripts de dados/Cena/Sons.tscn" id="9_jihmd"]
+
+[node name="Data" type="Node"]
+script = ExtResource("1_scxds")
+
+[node name="Arrays" parent="." instance=ExtResource("2_h0idf")]
+
+[node name="Concatenacoes" parent="." instance=ExtResource("3_kw6h4")]
+
+[node name="Constantes" parent="." instance=ExtResource("4_x4iku")]
+
+[node name="Database" parent="." instance=ExtResource("5_gxl8o")]
+
+[node name="Dicionarios" parent="." instance=ExtResource("6_vbom1")]
+
+[node name="Enumeracoes" parent="." instance=ExtResource("7_7jm4s")]
+
+[node name="Variaveis" parent="." instance=ExtResource("8_p4hxr")]
+
+[node name="Sons" parent="." instance=ExtResource("9_jihmd")]

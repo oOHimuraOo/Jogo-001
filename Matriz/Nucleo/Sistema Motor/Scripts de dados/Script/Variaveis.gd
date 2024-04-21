@@ -1,0 +1,2 @@
+class_name VARIAVEIS_GLOBAIS
+extends Node

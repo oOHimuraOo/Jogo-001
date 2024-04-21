@@ -1,0 +1,85 @@
+[gd_scene load_steps=10 format=3 uid="uid://dpvhph35v8vvv"]
+
+[ext_resource type="Script" path="res://Matriz/Interfaces/Interface de selecao de personagem/Mostruario de personagem/Script/SelecionadorDePersonagem.gd" id="1_v6isx"]
+
+[sub_resource type="Gradient" id="Gradient_si6b1"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_b3x4o"]
+gradient = SubResource("Gradient_si6b1")
+
+[sub_resource type="Gradient" id="Gradient_sme1o"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_l2j10"]
+gradient = SubResource("Gradient_sme1o")
+
+[sub_resource type="Gradient" id="Gradient_darpm"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 0.407843, 0.639216)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qdhuy"]
+gradient = SubResource("Gradient_darpm")
+
+[sub_resource type="Gradient" id="Gradient_jyhgu"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.348963, 0.125176, 0.320741, 0.556863)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_pyrj6"]
+gradient = SubResource("Gradient_jyhgu")
+
+[node name="MostruarioPersonagens" type="Control" groups=["MPers"]]
+custom_minimum_size = Vector2(200, 275)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_v6isx")
+
+[node name="PlanoDeFundo" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_b3x4o")
+
+[node name="Centralizador" type="CenterContainer" parent="PlanoDeFundo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Organizador" type="VBoxContainer" parent="PlanoDeFundo/Centralizador"]
+custom_minimum_size = Vector2(180, 255)
+layout_mode = 2
+
+[node name="PersonagemImagem" type="TextureRect" parent="PlanoDeFundo/Centralizador/Organizador"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = SubResource("GradientTexture1D_l2j10")
+expand_mode = 1
+
+[node name="PersonagemNome" type="Label" parent="PlanoDeFundo/Centralizador/Organizador"]
+layout_mode = 2
+text = "Nome"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IndicadorDeSelecao" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+texture_pressed = SubResource("GradientTexture1D_qdhuy")
+texture_hover = SubResource("GradientTexture1D_pyrj6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="toggled" from="IndicadorDeSelecao" to="." method="_on_indicador_de_selecao_toggled"]
